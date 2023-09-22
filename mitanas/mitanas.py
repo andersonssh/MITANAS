@@ -94,7 +94,7 @@ class Mitanas:
         )
         return self.executable_path
 
-    def configure(self) -> str:
+    def configure(self, executable_args: list) -> str:
         """generates script executable and configures
         it to start along with the system
 
@@ -102,6 +102,6 @@ class Mitanas:
             str: the path to the executable
         """
         executable_path = self.generate_executable()
-        startup_handler = StartupHandler(self.executable_path, [])
+        startup_handler = StartupHandler(self.executable_path, executable_args)
         startup_handler.add_at_startup()
         return executable_path
