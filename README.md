@@ -13,6 +13,11 @@ configures it to boot along with the system.
 * Crontab (Linux)
 * Linux | ~~Windows~~ (Coming soon)
 
+## Install
+```bash
+pip install mitanas
+```
+
 ## Basic Usage
 Mitanas must be installed in the same environment that you want to configure in order to extract the project's dependencies with greater precision.
 ```python
